@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8149001382574157966
 Transform:
   m_ObjectHideFlags: 0
@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 7516444538030729575}
   - component: {fileID: 7332264339322690605}
   - component: {fileID: 6138374902354303479}
+  - component: {fileID: -8688053191539307106}
   m_Layer: 0
   m_Name: UpBlock
   m_TagString: Untagged
@@ -335,7 +336,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4ed9d0c43851de34ba9c5e6418a55c9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -384,7 +385,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockType: 3
   stepToUnlock: 0
-  blockBound: {fileID: 0}
+  blockBound: {fileID: 496377248814086674}
+  lockCountText: {fileID: 7650730769564760479}
+  initialSpeed: 0
+  acceleration: 5
+  lifetime: 10
+  overshootDistance: 0.2
+  returnSpeed: 6
+--- !u!54 &-8688053191539307106
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012179642760473757}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &5569807518539022873
 PrefabInstance:
   m_ObjectHideFlags: 0
